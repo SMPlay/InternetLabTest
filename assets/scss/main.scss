@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 @import "vars.scss";
 @import "fonts.scss";
 
@@ -44,9 +46,9 @@ h2.title {
 .hide-text {
   min-height: 0 !important;
   max-height: 0 !important;
-  -webkit-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
 }
 .header {
   width: 100%;
@@ -66,9 +68,9 @@ h2.title {
     padding: 0 14px;
   }
   .row {
-    display: flex;
     display: -webkit-box;
     display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -128,16 +130,16 @@ h2.title {
     }
   }
   .navbar {
-    display: flex;
     display: -webkit-box;
     display: -ms-flexbox;
+    display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     .address {
-      display: flex;
       display: -webkit-box;
       display: -ms-flexbox;
+      display: flex;
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
@@ -156,9 +158,9 @@ h2.title {
   height: 34px;
 }
 .telephone {
-  display: inline-flex;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -180,9 +182,9 @@ h2.title {
 }
 .winner-btn {
   cursor: pointer;
-  display: flex;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -222,13 +224,13 @@ h2.title {
 .nav-menu {
   position: absolute;
   z-index: 2 !important;
-  display: flex;
   display: -webkit-box;
   display: -ms-flexbox;
-  flex-direction: column;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -297,23 +299,23 @@ h2.title {
 .winners {
   margin-top: 65px;
   .winner {
-    display: flex;
     display: -webkit-box;
     display: -ms-flexbox;
+    display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     &__img {
-      display: inline-flex;
       display: -webkit-inline-box;
       display: -ms-inline-flexbox;
+      display: inline-flex;
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
       .honor {
-        display: flex;
         display: -webkit-box;
         display: -ms-flexbox;
+        display: flex;
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
@@ -335,9 +337,9 @@ h2.title {
       color: $neutralColor;
     }
     .first {
-      display: flex;
       display: -webkit-box;
       display: -ms-flexbox;
+      display: flex;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
@@ -359,13 +361,13 @@ h2.title {
     padding-bottom: 33px;
   }
   .row {
-    display: flex;
     display: -webkit-box;
     display: -ms-flexbox;
-    flex-direction: column;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -427,9 +429,9 @@ h2.title {
         }
       }
       &__contents {
-        display: flex;
         display: -webkit-box;
         display: -ms-flexbox;
+        display: flex;
         position: relative;
         -webkit-transform: translateX(0);
             -ms-transform: translateX(0);
@@ -441,9 +443,9 @@ h2.title {
         transition: transform 2s, -webkit-transform 2s;
       }
       &__content {
-        display: flex;
         display: -webkit-box;
         display: -ms-flexbox;
+        display: flex;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
             -ms-flex-direction: row;
@@ -454,13 +456,13 @@ h2.title {
         padding: 18px 118px 0 118px;
         .article {
           &-text {
-            display: flex;
             display: -webkit-box;
             display: -ms-flexbox;
-            flex-direction: column;
+            display: flex;
             -webkit-box-orient: vertical;
             -webkit-box-direction: normal;
-            -ms-flex-direction: column;
+                -ms-flex-direction: column;
+                    flex-direction: column;
             h5 {
               font-family: $mainFont !important;
               font-size: 16px;
@@ -546,30 +548,30 @@ h2.title {
           text-transform: uppercase;
           outline: none;
           letter-spacing: $mainLetterSpacing;
-          -webkit-transition: all 0.2s;
-          -o-transition: all 0.2s;
-          transition: all 0.2s;
+          -webkit-transition: all .2s;
+          -o-transition: all .2s;
+          transition: all .2s;
           &:hover {
             background: darken($neutralColor, 3%);
           }
-          &:active {
-            -webkit-box-shadow: 0 0 60px 3px inset rgba(136, 136, 136, 0.27);
-                    box-shadow: 0 0 60px 3px inset rgba(136, 136, 136, 0.27);
+          &:active{
+            -webkit-box-shadow: 0 0 60px 3px inset rgba(136, 136, 136, .27);
+                    box-shadow: 0 0 60px 3px inset rgba(136, 136, 136, .27);
           }
         }
         .slider-text {
           min-height: 0;
           max-height: 700px;
-          -webkit-transition: all 0.2s;
-          -o-transition: all 0.2s;
-          transition: all 0.2s;
+          -webkit-transition: all .2s;
+          -o-transition: all .2s;
+          transition: all .2s;
         }
       }
       &__contoler {
         position: relative;
-        display: flex;
         display: -webkit-box;
         display: -ms-flexbox;
+        display: flex;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
@@ -763,9 +765,9 @@ h2.title {
     padding: 22px 14px 19px 14px;
   }
   .row {
-    display: flex;
     display: -webkit-box;
     display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -776,7 +778,7 @@ h2.title {
 }
 
 //media
-@media only screen and (max-width: $desktopWidth) {
+@media screen and (max-width: $desktopWidth) {
   .three-block {
     .employee-companies__wrapper {
       -ms-grid-columns: (1fr)[3];
@@ -822,7 +824,7 @@ h2.title {
     }
   }
 }
-@media only screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .block-two {
     .slider-block {
       .slider {
@@ -836,7 +838,7 @@ h2.title {
     }
   }
 }
-@media only screen and (max-width: $smDesktopWidth) {
+@media screen and (max-width: $smDesktopWidth) {
   .block-two {
     .slider-block {
       .slider {
@@ -883,7 +885,7 @@ h2.title {
   }
 }
 
-@media only screen and (max-width: $tableWidth) {
+@media screen and (max-width: $tableWidth) {
   h2.title {
     font-size: 40px;
   }
@@ -941,15 +943,15 @@ h2.title {
       }
     }
     .social-container {
-      display: flex;
       display: -webkit-box;
       display: -ms-flexbox;
+      display: flex;
       margin-top: 68px;
     }
     .telephone {
-      display: flex;
       display: -webkit-box;
       display: -ms-flexbox;
+      display: flex;
     }
   }
   .three-block {
@@ -973,9 +975,9 @@ h2.title {
           display: none;
         }
         &__content {
-          display: flex;
           display: -webkit-box;
           display: -ms-flexbox;
+          display: flex;
           -webkit-box-orient: vertical;
           -webkit-box-direction: reverse;
               -ms-flex-direction: column-reverse;
@@ -989,11 +991,7 @@ h2.title {
               margin-top: 23px;
               text-align: center;
             }
-            &-text {
-              -webkit-box-align: center;
-                  -ms-flex-align: center;
-                      align-items: center;
-            }
+            &-text{-webkit-box-align: center;-ms-flex-align: center;align-items: center;}
           }
           img {
             width: 330px;
@@ -1001,13 +999,14 @@ h2.title {
           .welsh {
             display: block;
           }
+          
         }
       }
     }
   }
 }
 
-@media only screen and (max-width: 609px) {
+@media screen and (max-width: 609px) {
   .three-block {
     .employee-companies__wrapper {
       -ms-grid-columns: (1fr)[1];
@@ -1049,7 +1048,7 @@ h2.title {
     }
   }
 }
-@media only screen and (max-width: $phoneWidth) {
+@media screen and (max-width: $phoneWidth) {
   .block-two {
     .slider-block {
       .slider {
@@ -1057,19 +1056,19 @@ h2.title {
           width: 128px;
         }
         &__content {
-          .article {
-            .first-name {
+          .article{
+            .first-name{
               font-size: 40px;
               margin-top: 27px;
             }
-            .last-name {
+            .last-name{
               font-size: 30px;
               margin-top: 14px;
             }
-            .status {
-              margin-top: 23px;
-            }
+            .status {margin-top: 23px;}
+            
           }
+          
         }
       }
     }
