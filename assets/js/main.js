@@ -17,6 +17,7 @@ let scrollPageY = 0,
     sliderPageWidth = slider.clientWidth,
     indexOfPage = 1,
     translatePage = 0,
+    mouseX = 0,
     hideText = false;
 
 const srcImg = {
@@ -126,12 +127,12 @@ welshBtns.forEach((btn, i) => {
             });
         }
         if(hideText){
-            btn.textContent = 'Открыть';
-        }else btn.textContent = 'Скрыть';
+            welshBtns.forEach(item => item.textContent = 'Открыть')
+        }else welshBtns.forEach(item => item.textContent = 'Скрыть');
     });
     
 });
-sliderContents.style.width = `${sliderPageWidth * allSliderPage}px`;
+
 window.addEventListener('scroll', scroll);
 window.addEventListener('resize', getSizeForSlider);
 burgerMenu.addEventListener('click', onClickBurgerMenu);

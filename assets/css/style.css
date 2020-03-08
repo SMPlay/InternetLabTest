@@ -57,9 +57,9 @@ h2.title {
 .hide-text {
   min-height: 0 !important;
   max-height: 0 !important;
-  -webkit-transition: all .2s;
-  -o-transition: all .2s;
-  transition: all .2s; }
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s; }
 
 .header {
   width: 100%;
@@ -388,6 +388,21 @@ h2.title {
     -o-transition: transform 2s;
     transition: transform 2s;
     transition: transform 2s, -webkit-transform 2s; }
+    .block-two .slider-block .slider__contents .first-name,
+    .block-two .slider-block .slider__contents .last-name,
+    .block-two .slider-block .slider__contents .status,
+    .block-two .slider-block .slider__contents .list__item,
+    .block-two .slider-block .slider__contents .comment,
+    .block-two .slider-block .slider__contents .tag,
+    .block-two .slider-block .slider__contents .avatar {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
+    .block-two .slider-block .slider__contents .avatar {
+      pointer-events: none; }
   .block-two .slider-block .slider__content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -475,9 +490,9 @@ h2.title {
       text-transform: uppercase;
       outline: none;
       letter-spacing: 0.155em;
-      -webkit-transition: all .2s;
-      -o-transition: all .2s;
-      transition: all .2s; }
+      -webkit-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s; }
       .block-two .slider-block .slider__content .welsh:hover {
         background: #f7f7f7; }
       .block-two .slider-block .slider__content .welsh:active {
@@ -486,9 +501,9 @@ h2.title {
     .block-two .slider-block .slider__content .slider-text {
       min-height: 0;
       max-height: 700px;
-      -webkit-transition: all .2s;
-      -o-transition: all .2s;
-      transition: all .2s; }
+      -webkit-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s; }
   .block-two .slider-block .slider__contoler {
     position: relative;
     display: -webkit-box;
