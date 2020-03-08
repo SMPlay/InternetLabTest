@@ -17,7 +17,6 @@ let scrollPageY = 0,
     sliderPageWidth = slider.clientWidth,
     indexOfPage = 1,
     translatePage = 0,
-    mouseX = 0,
     hideText = false;
 
 const srcImg = {
@@ -132,6 +131,7 @@ welshBtns.forEach((btn, i) => {
     });
     
 });
+sliderContents.style.width = `${sliderPageWidth * allSliderPage}px`;
 
 window.addEventListener('scroll', scroll);
 window.addEventListener('resize', getSizeForSlider);
